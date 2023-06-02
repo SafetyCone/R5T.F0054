@@ -130,7 +130,7 @@ $@"
 				: text
 				;
 
-			Instances.FileOperator.WriteText(
+			Instances.FileOperator.WriteText_Synchronous(
 				filePath,
 				outputText);
 		}
