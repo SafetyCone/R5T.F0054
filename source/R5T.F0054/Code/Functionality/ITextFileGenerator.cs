@@ -1,5 +1,5 @@
 using System;
-
+using System.Threading.Tasks;
 using R5T.T0132;
 
 
@@ -48,6 +48,14 @@ $@"
                 filePath,
                 text);
         }
+
+		public Task Create_PlaceholderHtmlFile(
+			string filePath)
+		{
+			return Instances.FileOperator.WriteText(
+				filePath,
+				"Placeholder text...");
+		}
 
         public void CreateProjectPlanTextFile(
 			string filePath,
