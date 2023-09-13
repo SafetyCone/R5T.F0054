@@ -138,7 +138,7 @@ $@"
 				: text
 				;
 
-			Instances.FileOperator.WriteText_Synchronous(
+			Instances.FileOperator.Write_Text_Synchronous(
 				filePath,
 				outputText);
 		}
