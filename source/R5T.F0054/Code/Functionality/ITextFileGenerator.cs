@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+
 using R5T.T0132;
 
 
@@ -52,7 +53,7 @@ $@"
 		public Task Create_PlaceholderHtmlFile(
 			string filePath)
 		{
-			return Instances.FileOperator.WriteText(
+			return Instances.FileOperator.Write_Text(
 				filePath,
 				"Placeholder text...");
 		}
